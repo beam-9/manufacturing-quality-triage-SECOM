@@ -1,0 +1,12 @@
+[
+  {
+    "at": "2026-10-01T20:17:05.228646+00:00",
+    "stage": "freeze",
+    "detail": "Split manifest, training-only tuning, queue model and 20% policy fixed before test evaluation."
+  },
+  {
+    "at": "2026-10-01T20:17:44.574837+00:00",
+    "stage": "evaluate",
+    "detail": "Frozen models evaluated once; results are descriptive, no subsequent tuning."
+  }
+]

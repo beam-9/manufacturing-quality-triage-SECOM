@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "run_id": "9ab3115398f717e5",
+  "frozen_at": "2026-10-01T20:17:05.228389+00:00",
+  "seed": 42,
+  "python": "3.11.15",
+  "queue_model": "logistic",
+  "review_capacity": 0.2,
+  "policy": "top ceil(capacity*N), descending score, ascending record ID ties",
+  "selected_params": {
+    "logistic": {
+      "C": 0.01
+    },
+    "forest": {
+      "max_depth": null,
+      "min_samples_leaf": 5
+    },
+    "dummy": {}
+  },
+  "cv_valid_folds": 3,
+  "cv_skipped": [],
+  "cv_results": [
+    {
+      "model": "logistic",
+      "params": {
+        "C": 0.01
+      },
+      "fold_average_precision": [
+        0.09734066695372237,
+        0.10452340811093362,
+        0.08787875335361439
+      ],
+      "mean_average_precision": 0.09658094280609013
+    },
+    {
+      "model": "logistic",
+      "params": {
+        "C": 0.1
+      },
+      "fold_average_precision": [
+        0.09778392127236483,
+        0.10457860261198923,
+        0.07673705361798472
+      ],
+      "mean_average_precision": 0.09303319250077959
+    },
+    {
+      "model": "logistic",
+      "params": {
+        "C": 1.0
+      },
+      "fold_average_precision": [
+        0.10027265408514846,
+        0.07264047781095248,
+        0.07291832130880066
+      ],
+      "mean_average_precision": 0.0819438177349672
+    },
+    {
+      "model": "forest",
+      "params": {
+        "max_depth": 5,
+        "min_samples_leaf": 5
+      },
+      "fold_average_precision": [
+        0.1206448698255426,
+        0.03584845752299867,
+        0.2048560714461515
+      ],
+      "mean_average_precision": 0.12044979959823092
+    },
+    {
+      "model": "forest",
+      "params": {
+        "max_depth": 5,
+        "min_samples_leaf": 10
+      },
+      "fold_average_precision": [
+        0.12350713258745472,
+        0.030255667937515336,
+        0.233683843789598
+      ],
+      "mean_average_precision": 0.12914888143818934
+    },
+    {
+      "model": "forest",
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      "fold_average_precision": [
+        0.11324214581449218,
+        0.03962484723830989,
+        0.2442171386609498
+      ],
+      "mean_average_precision": 0.1323613772379173
+    },
+    {
+      "model": "forest",
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 10
+      },
+      "fold_average_precision": [
+        0.1218086100313384,
+        0.0318952904501827,
+        0.19837829382778432
+      ],
+      "mean_average_precision": 0.11736073143643515
+    },
+    {
+      "model": "dummy",
+      "params": {},
+      "fold_average_precision": [
+        0.11063829787234042,
+        0.03404255319148936,
+        0.0425531914893617
+      ],
+      "mean_average_precision": 0.062411347517730496
+    }
+  ],
+  "split_hash": "c2fb2e22612f22a4b0aec07f53df173b381c541bda8a8791e91e2f926c07680d",
+  "limitations": [
+    "Public SECOM data, not Seagate data; retrospective quality triage only.",
+    "Measurement meanings, units, and availability before final testing are unknown.",
+    "Priority scores are not calibrated failure probabilities.",
+    "Model contributions and unusual measurements are associations, not physical causes.",
+    "Small failure counts and temporal dependence limit generalization.",
+    "Generated briefs require human review; no autonomous quality decision."
+  ],
+  "test_selection_policy": "No test-driven parameter, preprocessing, or capacity changes"
+}

@@ -1,0 +1,1858 @@
+{
+  "3311887670cd34c869afbbb9b92fa3e07b43406367e69a3d9d11c7c7e81abd4f": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1304"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 1.000000; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 1 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 275 (value): original value 3332.57; log-odds contribution +1051.233603; training median 0.0791, 5th\u201395th percentiles 0.0246\u20130.233225.",
+          "measurement": "Measurement 275"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 140 (value): original value 9998.88; log-odds contribution +644.723595; training median 0.2392, 5th\u201395th percentiles 0.080075\u20130.6265.",
+          "measurement": "Measurement 140"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 004 (value): original value 1112.16; log-odds contribution +150.111875; training median 1.2998, 5th\u201395th percentiles 0.7865\u20131.7112.",
+          "measurement": "Measurement 004"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 413 (value): original value 899.05; log-odds contribution +1.054113; training median 20.9155, 5th\u201395th percentiles 7.4461\u201350.8828.",
+          "measurement": "Measurement 413"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 277 (value): original value 21.2283; log-odds contribution +1.006088; training median 2.08335, 5th\u201395th percentiles 1.3015\u20133.3728.",
+          "measurement": "Measurement 277"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 415 (value): original value 60.7443; log-odds contribution -0.698915; training median 6.1491, 5th\u201395th percentiles 3.7412\u20139.68102.",
+          "measurement": "Measurement 415"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 142 (value): original value 52.34; log-odds contribution -0.697343; training median 6.265, 5th\u201395th percentiles 3.78\u201310.",
+          "measurement": "Measurement 142"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 278 (missingness): original value missing (median-imputed); log-odds contribution -0.449988; training median 0.0011, 5th\u201395th percentiles 0.0007\u20130.0017.",
+          "measurement": "Measurement 278"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 416 (missingness): original value missing (median-imputed); log-odds contribution -0.449988; training median 3.3921, 5th\u201395th percentiles 2.2989\u20135.0735.",
+          "measurement": "Measurement 416"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 007 (missingness): original value missing (median-imputed); log-odds contribution -0.449988; training median 0.1222, 5th\u201395th percentiles 0.1195\u20130.1255.",
+          "measurement": "Measurement 007"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "3311887670cd34c869afbbb9b92fa3e07b43406367e69a3d9d11c7c7e81abd4f"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "High log-odds contributions suggest these measurements may be influential in the model's decision."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09"
+          ],
+          "interpretation": "These measurements show mixed contributions, indicating potential variability in their impact."
+        },
+        {
+          "evidence_ids": [
+            "E10",
+            "E11",
+            "E12"
+          ],
+          "interpretation": "Missingness in these measurements was imputed, and their contributions suggest possible relevance."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "dc23e20add573a00f574bd9ba0cec10fd8c3702c0a3d5fe28727627fdce99992",
+      "generated_at": "2026-10-01T20:25:48.223469+00:00",
+      "evidence_hash": "3311887670cd34c869afbbb9b92fa3e07b43406367e69a3d9d11c7c7e81abd4f",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 28.179,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "a738d2eab878dcbcbffb69a09224fd6b41cb680f562b8f8f4cdcc0c5a60b23e9": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1320"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 1.000000; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 2 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 275 (value): original value 3332.6; log-odds contribution +1051.243382; training median 0.0791, 5th\u201395th percentiles 0.0246\u20130.233225.",
+          "measurement": "Measurement 275"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 140 (value): original value 9998.89; log-odds contribution +644.724556; training median 0.2392, 5th\u201395th percentiles 0.080075\u20130.6265.",
+          "measurement": "Measurement 140"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 004 (value): original value 1112.08; log-odds contribution +150.100646; training median 1.2998, 5th\u201395th percentiles 0.7865\u20131.7112.",
+          "measurement": "Measurement 004"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 413 (value): original value 899.119; log-odds contribution +1.054195; training median 20.9155, 5th\u201395th percentiles 7.4461\u201350.8828.",
+          "measurement": "Measurement 413"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 277 (value): original value 16.5289; log-odds contribution +0.758333; training median 2.08335, 5th\u201395th percentiles 1.3015\u20133.3728.",
+          "measurement": "Measurement 277"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 056 (value): original value 0.9052; log-odds contribution -0.780288; training median 0.9314, 5th\u201395th percentiles 0.9217\u20130.9364.",
+          "measurement": "Measurement 056"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 415 (value): original value 41.7554; log-odds contribution -0.454863; training median 6.1491, 5th\u201395th percentiles 3.7412\u20139.68102.",
+          "measurement": "Measurement 415"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 007 (missingness): original value missing (median-imputed); log-odds contribution -0.449988; training median 0.1222, 5th\u201395th percentiles 0.1195\u20130.1255.",
+          "measurement": "Measurement 007"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 143 (missingness): original value missing (median-imputed); log-odds contribution -0.449988; training median 0.0042, 5th\u201395th percentiles 0.0028\u20130.0063.",
+          "measurement": "Measurement 143"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 416 (missingness): original value missing (median-imputed); log-odds contribution -0.449988; training median 3.3921, 5th\u201395th percentiles 2.2989\u20135.0735.",
+          "measurement": "Measurement 416"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "a738d2eab878dcbcbffb69a09224fd6b41cb680f562b8f8f4cdcc0c5a60b23e9"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "These measurements have high log-odds contributions, indicating potential relevance to the model's decision."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements show moderate to low log-odds contributions, suggesting limited influence on the model's output."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "Missingness in these measurements was imputed, and their contributions are associated with the model's output."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "be1b746c22e5a86cd4b257c3b6125fc312b611ec0fecf2deb44fabb7f8e63688",
+      "generated_at": "2026-10-01T20:26:17.243744+00:00",
+      "evidence_hash": "a738d2eab878dcbcbffb69a09224fd6b41cb680f562b8f8f4cdcc0c5a60b23e9",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 29.018,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "5abeeeeb7f0c1b9bdee794bb550f728796e4c023c45ba00b0f256477c110aff3": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1446"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 1.000000; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 3 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 275 (value): original value 3331.68; log-odds contribution +1050.952787; training median 0.0791, 5th\u201395th percentiles 0.0246\u20130.233225.",
+          "measurement": "Measurement 275"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 140 (value): original value 9997.91; log-odds contribution +644.661119; training median 0.2392, 5th\u201395th percentiles 0.080075\u20130.6265.",
+          "measurement": "Measurement 140"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 004 (value): original value 1114.54; log-odds contribution +150.433017; training median 1.2998, 5th\u201395th percentiles 0.7865\u20131.7112.",
+          "measurement": "Measurement 004"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 007 (value): original value 0; log-odds contribution +4.106596; training median 0.1222, 5th\u201395th percentiles 0.1195\u20130.1255.",
+          "measurement": "Measurement 007"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 413 (value): original value 897.046; log-odds contribution +1.051698; training median 20.9155, 5th\u201395th percentiles 7.4461\u201350.8828.",
+          "measurement": "Measurement 413"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 142 (value): original value 22.13; log-odds contribution -0.238029; training median 6.265, 5th\u201395th percentiles 3.78\u201310.",
+          "measurement": "Measurement 142"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 562 (value): original value 271.204; log-odds contribution -0.230757; training median 264.272, 5th\u201395th percentiles 247.613\u2013268.626.",
+          "measurement": "Measurement 562"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 009 (value): original value 0.0489; log-odds contribution -0.213427; training median -0.0019, 5th\u201395th percentiles -0.0259\u20130.0221.",
+          "measurement": "Measurement 009"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 415 (value): original value 20.4313; log-odds contribution -0.180798; training median 6.1491, 5th\u201395th percentiles 3.7412\u20139.68102.",
+          "measurement": "Measurement 415"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 280 (value): original value 0.0256; log-odds contribution -0.153397; training median 0.01635, 5th\u201395th percentiles 0.0105\u20130.027805.",
+          "measurement": "Measurement 280"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "5abeeeeb7f0c1b9bdee794bb550f728796e4c023c45ba00b0f256477c110aff3"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "These measurements show high log-odds contributions, indicating potential significance in the model's decision-making."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements have low or negative log-odds contributions, suggesting possible relevance to the model's output."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "These measurements have moderate log-odds contributions, indicating possible relevance to the model's output."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "c1cbd8531c4f3c01aefd5af00c0d2d16e3436de4edb4269bc89247cc99d64f86",
+      "generated_at": "2026-10-01T20:26:46.314319+00:00",
+      "evidence_hash": "5abeeeeb7f0c1b9bdee794bb550f728796e4c023c45ba00b0f256477c110aff3",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 29.069,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "ae9c7d091fce72584e90b482eaa4dba0a556fa32d7a68dbd54a7e9c391c47355": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1456"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 1.000000; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 4 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 275 (value): original value 3332.45; log-odds contribution +1051.196474; training median 0.0791, 5th\u201395th percentiles 0.0246\u20130.233225.",
+          "measurement": "Measurement 275"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 140 (value): original value 9997.98; log-odds contribution +644.665542; training median 0.2392, 5th\u201395th percentiles 0.080075\u20130.6265.",
+          "measurement": "Measurement 140"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 004 (value): original value 1112.47; log-odds contribution +150.154143; training median 1.2998, 5th\u201395th percentiles 0.7865\u20131.7112.",
+          "measurement": "Measurement 004"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 007 (value): original value 0; log-odds contribution +4.106596; training median 0.1222, 5th\u201395th percentiles 0.1195\u20130.1255.",
+          "measurement": "Measurement 007"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 277 (value): original value 32.1709; log-odds contribution +1.582988; training median 2.08335, 5th\u201395th percentiles 1.3015\u20133.3728.",
+          "measurement": "Measurement 277"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 142 (value): original value 103.39; log-odds contribution -1.473509; training median 6.265, 5th\u201395th percentiles 3.78\u201310.",
+          "measurement": "Measurement 142"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 415 (value): original value 116.862; log-odds contribution -1.420152; training median 6.1491, 5th\u201395th percentiles 3.7412\u20139.68102.",
+          "measurement": "Measurement 415"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 485 (value): original value 909.744; log-odds contribution -0.456537; training median 116.918, 5th\u201395th percentiles 0\u2013627.824.",
+          "measurement": "Measurement 485"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 563 (value): original value 0.7897; log-odds contribution -0.144983; training median 0.6827, 5th\u201395th percentiles 0.5671\u20130.89949.",
+          "measurement": "Measurement 563"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 544 (value): original value 0.0024; log-odds contribution -0.133727; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "ae9c7d091fce72584e90b482eaa4dba0a556fa32d7a68dbd54a7e9c391c47355"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show high log-odds contributions, indicating potential significance in the model's decision-making."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements have notable log-odds contributions, suggesting they may influence the model's output."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "A few measurements have low log-odds contributions, which may indicate less influence on the model's output."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "0dd30d38fc3c5615bbf32a1e9a178d6557aaa64dc2c4474e087a03145c0ed662",
+      "generated_at": "2026-10-01T20:27:15.530770+00:00",
+      "evidence_hash": "ae9c7d091fce72584e90b482eaa4dba0a556fa32d7a68dbd54a7e9c391c47355",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 29.213,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "145ebb090c74426b5af05b04510ed3b7d184b125ae05ce3b96228c669a67caaa": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1458"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.997475; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 5 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 201 (value): original value 126.53; log-odds contribution +2.501856; training median 6.16, 5th\u201395th percentiles 3.315\u201314.4625.",
+          "measurement": "Measurement 201"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 337 (value): original value 38.8995; log-odds contribution +1.605718; training median 1.865, 5th\u201395th percentiles 1.05555\u20133.92925.",
+          "measurement": "Measurement 337"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 475 (value): original value 79.1162; log-odds contribution +1.351929; training median 4.3918, 5th\u201395th percentiles 2.6497\u20135.48692.",
+          "measurement": "Measurement 475"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 473 (value): original value 358.95; log-odds contribution +1.312014; training median 31.6202, 5th\u201395th percentiles 15.8097\u201374.4026.",
+          "measurement": "Measurement 473"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 471 (value): original value 212.656; log-odds contribution +1.178297; training median 7.4855, 5th\u201395th percentiles 4.28106\u201325.4838.",
+          "measurement": "Measurement 471"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 338 (value): original value 196.688; log-odds contribution -2.662078; training median 2.2533, 5th\u201395th percentiles 1.2929\u20134.68697.",
+          "measurement": "Measurement 338"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 204 (value): original value 9998.45; log-odds contribution -0.919666; training median 0.1744, 5th\u201395th percentiles 0.0794\u20130.5257.",
+          "measurement": "Measurement 204"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 286 (value): original value 207.016; log-odds contribution -0.840779; training median 3.4199, 5th\u201395th percentiles 1.56181\u20135.74951.",
+          "measurement": "Measurement 286"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 424 (value): original value 102.05; log-odds contribution -0.728940; training median 2.7201, 5th\u201395th percentiles 1.18448\u20134.76361.",
+          "measurement": "Measurement 424"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 151 (value): original value 515.283; log-odds contribution -0.643339; training median 11.2405, 5th\u201395th percentiles 4.9217\u201319.3858.",
+          "measurement": "Measurement 151"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "145ebb090c74426b5af05b04510ed3b7d184b125ae05ce3b96228c669a67caaa"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "These measurements show high log-odds contributions, indicating potential significance in the model's decision-making."
+        },
+        {
+          "evidence_ids": [
+            "E08",
+            "E09",
+            "E10",
+            "E11"
+          ],
+          "interpretation": "These measurements have negative log-odds contributions, suggesting possible influence on the model's outcome."
+        },
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "interpretation": "The priority score is not a calibrated probability, which may affect the interpretation of its importance."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "702847c441a7b91bebef0dd3b830302fb7ecde71f6f926c49461ac975c47bf03",
+      "generated_at": "2026-10-01T20:27:43.575365+00:00",
+      "evidence_hash": "145ebb090c74426b5af05b04510ed3b7d184b125ae05ce3b96228c669a67caaa",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 28.041,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "b87b1364b911b7d492bbabe97700ffbc55c739ff7da9858abb5486164c5973c7": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1460"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.957785; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 6 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 007 (value): original value 0; log-odds contribution +4.106596; training median 0.1222, 5th\u201395th percentiles 0.1195\u20130.1255.",
+          "measurement": "Measurement 007"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 143 (value): original value 0; log-odds contribution +0.318540; training median 0.0042, 5th\u201395th percentiles 0.0028\u20130.0063.",
+          "measurement": "Measurement 143"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 416 (value): original value 0; log-odds contribution +0.302507; training median 3.3921, 5th\u201395th percentiles 2.2989\u20135.0735.",
+          "measurement": "Measurement 416"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 563 (value): original value 0.5671; log-odds contribution +0.196657; training median 0.6827, 5th\u201395th percentiles 0.5671\u20130.89949.",
+          "measurement": "Measurement 563"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 038 (value): original value 85.9594; log-odds contribution +0.189500; training median 86.8489, 5th\u201395th percentiles 86.3742\u201388.2207.",
+          "measurement": "Measurement 038"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 000 (value): original value 3051.8; log-odds contribution -0.146867; training median 3007.8, 5th\u201395th percentiles 2908.09\u20133106.66.",
+          "measurement": "Measurement 000"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 544 (value): original value 0.0024; log-odds contribution -0.133727; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 059 (value): original value -0.2491; log-odds contribution -0.133121; training median 2.4259, 5th\u201395th percentiles -6.5557\u201325.4712.",
+          "measurement": "Measurement 059"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 247 (missingness): original value missing (median-imputed); log-odds contribution -0.131093; training median 0.03035, 5th\u201395th percentiles 0.0142\u20130.21296.",
+          "measurement": "Measurement 247"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 112 (missingness): original value missing (median-imputed); log-odds contribution -0.131093; training median 0.4632, 5th\u201395th percentiles 0.45279\u20130.473355.",
+          "measurement": "Measurement 112"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "b87b1364b911b7d492bbabe97700ffbc55c739ff7da9858abb5486164c5973c7"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show log-odds contributions that deviate from training percentiles, indicating potential anomalies."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements have log-odds contributions that differ from training medians, suggesting possible relevance to the model's decision."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "Missingness in certain measurements is imputed, and their log-odds contributions suggest they may influence the model's output."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "458a42a5e600e4dab0091a5d46588afb1121cea22725c38fcc8cef8bd9fa7d7b",
+      "generated_at": "2026-10-01T20:28:12.716903+00:00",
+      "evidence_hash": "b87b1364b911b7d492bbabe97700ffbc55c739ff7da9858abb5486164c5973c7",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 29.139,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "09ad8730db6f592e00a222ae38a3455e3dce9dd40c61cefeee7ded7544a81e3c": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1397"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.851866; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 7 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 201 (value): original value 58.46; log-odds contribution +1.076381; training median 6.16, 5th\u201395th percentiles 3.315\u201314.4625.",
+          "measurement": "Measurement 201"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 473 (value): original value 219.409; log-odds contribution +0.744571; training median 31.6202, 5th\u201395th percentiles 15.8097\u201374.4026.",
+          "measurement": "Measurement 473"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 337 (value): original value 17.5677; log-odds contribution +0.674374; training median 1.865, 5th\u201395th percentiles 1.05555\u20133.92925.",
+          "measurement": "Measurement 337"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 065 (value): original value 96.3465; log-odds contribution +0.417801; training median 25.5861, 5th\u201395th percentiles 17.8425\u201340.4096.",
+          "measurement": "Measurement 065"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 205 (value): original value 111.43; log-odds contribution +0.364782; training median 8.34, 5th\u201395th percentiles 4.418\u201316.486.",
+          "measurement": "Measurement 205"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 544 (value): original value 0.002; log-odds contribution -0.481697; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 338 (value): original value 36.0517; log-odds contribution -0.458060; training median 2.2533, 5th\u201395th percentiles 1.2929\u20134.68697.",
+          "measurement": "Measurement 338"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 060 (value): original value 331.227; log-odds contribution -0.323374; training median 354.322, 5th\u201395th percentiles 347.783\u2013363.91.",
+          "measurement": "Measurement 060"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 081 (value): original value -0.0629; log-odds contribution -0.228313; training median -0.02005, 5th\u201395th percentiles -0.04881\u20130.001.",
+          "measurement": "Measurement 081"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 476 (value): original value 78.5433; log-odds contribution -0.165618; training median 17.2999, 5th\u201395th percentiles 7.46906\u201352.3739.",
+          "measurement": "Measurement 476"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "09ad8730db6f592e00a222ae38a3455e3dce9dd40c61cefeee7ded7544a81e3c"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show values significantly higher than their training percentiles, indicating potential anomalies."
+        },
+        {
+          "evidence_ids": [
+            "E08",
+            "E09",
+            "E10",
+            "E11"
+          ],
+          "interpretation": "Some measurements show values lower than their training percentiles, suggesting possible deviations from expected patterns."
+        },
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "interpretation": "The priority score is not a calibrated probability, so it should be interpreted as a relative ranking rather than a failure likelihood."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "2439198a47ffa028972c2644e4b570db6baa89357f16b0dc1bef27dda544cf22",
+      "generated_at": "2026-10-01T20:28:41.881110+00:00",
+      "evidence_hash": "09ad8730db6f592e00a222ae38a3455e3dce9dd40c61cefeee7ded7544a81e3c",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 29.162,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "71cdd479204c806d4081a8c89cabab8c8428608837d99289ecb66f861229f9c9": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1326"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.818637; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 8 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 544 (value): original value 0.0033; log-odds contribution +0.649203; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 306 (value): original value 0.2246; log-odds contribution +0.599300; training median 0.0408, 5th\u201395th percentiles 0.0199\u20130.0812.",
+          "measurement": "Measurement 306"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 171 (value): original value 0.4893; log-odds contribution +0.388379; training median 0.1027, 5th\u201395th percentiles 0.0469\u20130.2011.",
+          "measurement": "Measurement 171"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 090 (value): original value 8089.78; log-odds contribution +0.258644; training median 8813.97, 5th\u201395th percentiles 8212.94\u20139400.81.",
+          "measurement": "Measurement 090"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 086 (value): original value 2.4756; log-odds contribution +0.257612; training median 2.402, 5th\u201395th percentiles 2.33766\u20132.4547.",
+          "measurement": "Measurement 086"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 214 (value): original value 0.3441; log-odds contribution -0.473513; training median 0.0758, 5th\u201395th percentiles 0.03609\u20130.162355.",
+          "measurement": "Measurement 214"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 352 (value): original value 0.0833; log-odds contribution -0.423402; training median 0.0224, 5th\u201395th percentiles 0.0105\u20130.042515.",
+          "measurement": "Measurement 352"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 571 (value): original value 0.9847; log-odds contribution -0.351890; training median 2.1956, 5th\u201395th percentiles 1.67385\u20132.4976.",
+          "measurement": "Measurement 571"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 488 (value): original value 808.738; log-odds contribution -0.280278; training median 355.971, 5th\u201395th percentiles 0\u2013787.714.",
+          "measurement": "Measurement 488"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 486 (value): original value 0; log-odds contribution -0.170016; training median 265.513, 5th\u201395th percentiles 0\u2013857.785.",
+          "measurement": "Measurement 486"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "71cdd479204c806d4081a8c89cabab8c8428608837d99289ecb66f861229f9c9"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show values outside the training percentiles, indicating potential anomalies."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements have log-odds contributions that deviate from the training distribution."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "A few measurements have values that fall outside the training range, suggesting possible outliers."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "88921ecbdef6230ebaeff9d76ef28367d84581c4d999994b2a372d0890c6c7a2",
+      "generated_at": "2026-10-01T20:29:12.138171+00:00",
+      "evidence_hash": "71cdd479204c806d4081a8c89cabab8c8428608837d99289ecb66f861229f9c9",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 30.252,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "7833b0f3e1f05ec8d4934730f829b8ebb8be47250dd285bf4e69a7ea17e834fb": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1467"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.770588; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 9 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 007 (value): original value 0; log-odds contribution +4.106596; training median 0.1222, 5th\u201395th percentiles 0.1195\u20130.1255.",
+          "measurement": "Measurement 007"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 562 (value): original value 248.184; log-odds contribution +0.337090; training median 264.272, 5th\u201395th percentiles 247.613\u2013268.626.",
+          "measurement": "Measurement 562"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 143 (value): original value 0; log-odds contribution +0.318540; training median 0.0042, 5th\u201395th percentiles 0.0028\u20130.0063.",
+          "measurement": "Measurement 143"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 416 (value): original value 0; log-odds contribution +0.302507; training median 3.3921, 5th\u201395th percentiles 2.2989\u20135.0735.",
+          "measurement": "Measurement 416"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 486 (value): original value 783.845; log-odds contribution +0.262494; training median 265.513, 5th\u201395th percentiles 0\u2013857.785.",
+          "measurement": "Measurement 486"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 544 (value): original value 0.0021; log-odds contribution -0.394704; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 279 (value): original value 0.0912; log-odds contribution -0.377485; training median 0.03455, 5th\u201395th percentiles 0.019695\u20130.05672.",
+          "measurement": "Measurement 279"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 571 (value): original value 0.9847; log-odds contribution -0.351890; training median 2.1956, 5th\u201395th percentiles 1.67385\u20132.4976.",
+          "measurement": "Measurement 571"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 563 (value): original value 0.8882; log-odds contribution -0.296157; training median 0.6827, 5th\u201395th percentiles 0.5671\u20130.89949.",
+          "measurement": "Measurement 563"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 144 (value): original value 0.2636; log-odds contribution -0.294808; training median 0.0993, 5th\u201395th percentiles 0.056585\u20130.172105.",
+          "measurement": "Measurement 144"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "7833b0f3e1f05ec8d4934730f829b8ebb8be47250dd285bf4e69a7ea17e834fb"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show log-odds contributions that differ from training percentiles, indicating potential anomalies."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements have log-odds contributions that deviate from training medians, suggesting possible relevance to the model's decision."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "A few measurements have log-odds contributions that align with training percentiles, indicating consistency with the model's behavior."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "8addcda2b09572b99f9598c47f0b8089638cdb7c524c0f14c7f87226ccdcfb8b",
+      "generated_at": "2026-10-01T20:29:41.431760+00:00",
+      "evidence_hash": "7833b0f3e1f05ec8d4934730f829b8ebb8be47250dd285bf4e69a7ea17e834fb",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 29.291,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "340c50880af07db9013f0a5d17f47285cee79207e194412fdc22d53b07aaf35d": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1469"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.739779; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 10 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 007 (value): original value 0; log-odds contribution +4.106596; training median 0.1222, 5th\u201395th percentiles 0.1195\u20130.1255.",
+          "measurement": "Measurement 007"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 000 (value): original value 2898.17; log-odds contribution +0.389013; training median 3007.8, 5th\u201395th percentiles 2908.09\u20133106.66.",
+          "measurement": "Measurement 000"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 143 (value): original value 0; log-odds contribution +0.318540; training median 0.0042, 5th\u201395th percentiles 0.0028\u20130.0063.",
+          "measurement": "Measurement 143"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 416 (value): original value 0; log-odds contribution +0.302507; training median 3.3921, 5th\u201395th percentiles 2.2989\u20135.0735.",
+          "measurement": "Measurement 416"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 544 (value): original value 0.0028; log-odds contribution +0.214242; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 424 (value): original value 103.181; log-odds contribution -0.737280; training median 2.7201, 5th\u201395th percentiles 1.18448\u20134.76361.",
+          "measurement": "Measurement 424"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 151 (value): original value 462.171; log-odds contribution -0.575215; training median 11.2405, 5th\u201395th percentiles 4.9217\u201319.3858.",
+          "measurement": "Measurement 151"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 286 (value): original value 133.643; log-odds contribution -0.536733; training median 3.4199, 5th\u201395th percentiles 1.56181\u20135.74951.",
+          "measurement": "Measurement 286"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 562 (value): original value 272.262; log-odds contribution -0.256855; training median 264.272, 5th\u201395th percentiles 247.613\u2013268.626.",
+          "measurement": "Measurement 562"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 486 (value): original value 0; log-odds contribution -0.170016; training median 265.513, 5th\u201395th percentiles 0\u2013857.785.",
+          "measurement": "Measurement 486"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "340c50880af07db9013f0a5d17f47285cee79207e194412fdc22d53b07aaf35d"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show deviations from training percentiles, indicating potential anomalies."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements have log-odds contributions that differ from training medians, suggesting possible relevance to the model's decision."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "A few measurements have values that fall outside the training range, which may require further investigation."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "d4b242157fc12643a57a6a46b1aa462bfe8d9086b758ba5caaf57a343979945f",
+      "generated_at": "2026-10-01T20:30:10.627833+00:00",
+      "evidence_hash": "340c50880af07db9013f0a5d17f47285cee79207e194412fdc22d53b07aaf35d",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 29.193,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "9a368a6cd9af8c03ab8f36aade3a63c8572844edacc4bd04c94b083d46c848ac": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1311"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.624371; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 11 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 306 (value): original value 0.2246; log-odds contribution +0.599300; training median 0.0408, 5th\u201395th percentiles 0.0199\u20130.0812.",
+          "measurement": "Measurement 306"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 171 (value): original value 0.4893; log-odds contribution +0.388379; training median 0.1027, 5th\u201395th percentiles 0.0469\u20130.2011.",
+          "measurement": "Measurement 171"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 000 (value): original value 2908.11; log-odds contribution +0.354341; training median 3007.8, 5th\u201395th percentiles 2908.09\u20133106.66.",
+          "measurement": "Measurement 000"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 486 (value): original value 873.244; log-odds contribution +0.311823; training median 265.513, 5th\u201395th percentiles 0\u2013857.785.",
+          "measurement": "Measurement 486"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 113 (value): original value 0.9702; log-odds contribution +0.250096; training median 0.9448, 5th\u201395th percentiles 0.925095\u20130.964205.",
+          "measurement": "Measurement 113"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 488 (value): original value 896.335; log-odds contribution -0.335263; training median 355.971, 5th\u201395th percentiles 0\u2013787.714.",
+          "measurement": "Measurement 488"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 485 (value): original value 670.866; log-odds contribution -0.306507; training median 116.918, 5th\u201395th percentiles 0\u2013627.824.",
+          "measurement": "Measurement 485"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 225 (value): original value 1909.5; log-odds contribution -0.180888; training median 957.8, 5th\u201395th percentiles 484.435\u20131842.14.",
+          "measurement": "Measurement 225"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 060 (value): original value 344.523; log-odds contribution -0.141978; training median 354.322, 5th\u201395th percentiles 347.783\u2013363.91.",
+          "measurement": "Measurement 060"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 497 (value): original value 20.9812; log-odds contribution -0.137862; training median 10.8317, 5th\u201395th percentiles 5.50881\u201320.8842.",
+          "measurement": "Measurement 497"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "9a368a6cd9af8c03ab8f36aade3a63c8572844edacc4bd04c94b083d46c848ac"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "These measurements show deviations from training percentiles, contributing to the model's log-odds."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "These measurements have log-odds contributions that may indicate unusual patterns relative to training data."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "These measurements have log-odds contributions that may indicate unusual patterns relative to training data."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "d4fb71053d2367083f1a510e70a4848d06e01453ed83ae086e00b4d8ef04125e",
+      "generated_at": "2026-10-01T20:30:38.979726+00:00",
+      "evidence_hash": "9a368a6cd9af8c03ab8f36aade3a63c8572844edacc4bd04c94b083d46c848ac",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 28.348,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "4fffe88d065973553aa3bcb6ab7856ddb92758c148c73d4cf53d6d5b6e85276b": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1346"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.590107; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 12 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 588 (value): original value 0.0286; log-odds contribution +0.945981; training median 0.0046, 5th\u201395th percentiles 0.0021\u20130.01041.",
+          "measurement": "Measurement 588"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 587 (value): original value 0.0799; log-odds contribution +0.587090; training median 0.0149, 5th\u201395th percentiles 0.00669\u20130.0326.",
+          "measurement": "Measurement 587"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 544 (value): original value 0.0029; log-odds contribution +0.301234; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 562 (value): original value 250.574; log-odds contribution +0.278134; training median 264.272, 5th\u201395th percentiles 247.613\u2013268.626.",
+          "measurement": "Measurement 562"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 488 (value): original value 39.3305; log-odds contribution +0.202677; training median 355.971, 5th\u201395th percentiles 0\u2013787.714.",
+          "measurement": "Measurement 488"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 485 (value): original value 960.839; log-odds contribution -0.488628; training median 116.918, 5th\u201395th percentiles 0\u2013627.824.",
+          "measurement": "Measurement 485"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 056 (value): original value 0.9201; log-odds contribution -0.314547; training median 0.9314, 5th\u201395th percentiles 0.9217\u20130.9364.",
+          "measurement": "Measurement 056"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 081 (value): original value -0.0717; log-odds contribution -0.276185; training median -0.02005, 5th\u201395th percentiles -0.04881\u20130.001.",
+          "measurement": "Measurement 081"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 563 (value): original value 0.8561; log-odds contribution -0.246891; training median 0.6827, 5th\u201395th percentiles 0.5671\u20130.89949.",
+          "measurement": "Measurement 563"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 316 (value): original value 8.243; log-odds contribution -0.172480; training median 5.6836, 5th\u201395th percentiles 4.39229\u20137.20026.",
+          "measurement": "Measurement 316"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "4fffe88d065973553aa3bcb6ab7856ddb92758c148c73d4cf53d6d5b6e85276b"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show deviations from training percentiles, indicating potential anomalies."
+        },
+        {
+          "evidence_ids": [
+            "E07",
+            "E08",
+            "E09",
+            "E10"
+          ],
+          "interpretation": "Some measurements have log-odds contributions that differ from training distributions, suggesting possible relevance to the model's decision."
+        },
+        {
+          "evidence_ids": [
+            "E11",
+            "E12"
+          ],
+          "interpretation": "A few measurements have log-odds contributions that are lower than training percentiles, indicating possible relevance to the model's decision."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "ca662e1c0171ce1b65f3697ef07db82489706417dca27b8a7f6b139a5d05695f",
+      "generated_at": "2026-10-01T20:31:05.741250+00:00",
+      "evidence_hash": "4fffe88d065973553aa3bcb6ab7856ddb92758c148c73d4cf53d6d5b6e85276b",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 26.758,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  "ee487f4bf5ed9570e458c641066e74dcd5dd390dbcde21b811debb4e34028bc0": {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "record_ids": [
+        "SECOM-1542"
+      ],
+      "population_hash": "be4081ead5d9d46648a1b6d0091c0ae2712cfa9ad2b8c681aab8c8fecc730c9b",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Priority score: 0.526344; not a calibrated probability.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Rank 13 of 314 records; review capacity 20%; selected: True.",
+          "measurement": null
+        },
+        {
+          "evidence_id": "E03",
+          "text": "Measurement 122 (value): original value 2.032; log-odds contribution +0.203943; training median 3.865, 5th\u201395th percentiles 2.824\u20135.261.",
+          "measurement": "Measurement 122"
+        },
+        {
+          "evidence_id": "E04",
+          "text": "Measurement 008 (value): original value 1.3109; log-odds contribution +0.192051; training median 1.4718, 5th\u201395th percentiles 1.36968\u20131.58281.",
+          "measurement": "Measurement 008"
+        },
+        {
+          "evidence_id": "E05",
+          "text": "Measurement 127 (value): original value 0.38; log-odds contribution +0.185306; training median 0.65285, 5th\u201395th percentiles 0.4914\u20130.9527.",
+          "measurement": "Measurement 127"
+        },
+        {
+          "evidence_id": "E06",
+          "text": "Measurement 086 (value): original value 2.449; log-odds contribution +0.167463; training median 2.402, 5th\u201395th percentiles 2.33766\u20132.4547.",
+          "measurement": "Measurement 086"
+        },
+        {
+          "evidence_id": "E07",
+          "text": "Measurement 058 (value): original value 4.7755; log-odds contribution +0.165082; training median 4.60895, 5th\u201395th percentiles 4.4937\u20134.73123.",
+          "measurement": "Measurement 058"
+        },
+        {
+          "evidence_id": "E08",
+          "text": "Measurement 560 (value): original value 0.3169; log-odds contribution -0.255238; training median 0.0557, 5th\u201395th percentiles 0.0253\u20130.1773.",
+          "measurement": "Measurement 560"
+        },
+        {
+          "evidence_id": "E09",
+          "text": "Measurement 143 (value): original value 0.0074; log-odds contribution -0.232152; training median 0.0042, 5th\u201395th percentiles 0.0028\u20130.0063.",
+          "measurement": "Measurement 143"
+        },
+        {
+          "evidence_id": "E10",
+          "text": "Measurement 544 (value): original value 0.0023; log-odds contribution -0.220720; training median 0.0026, 5th\u201395th percentiles 0.002\u20130.0026.",
+          "measurement": "Measurement 544"
+        },
+        {
+          "evidence_id": "E11",
+          "text": "Measurement 416 (value): original value 5.8361; log-odds contribution -0.202526; training median 3.3921, 5th\u201395th percentiles 2.2989\u20135.0735.",
+          "measurement": "Measurement 416"
+        },
+        {
+          "evidence_id": "E12",
+          "text": "Measurement 044 (value): original value 10.4225; log-odds contribution -0.173416; training median 10.0267, 5th\u201395th percentiles 9.67952\u201310.2973.",
+          "measurement": "Measurement 044"
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "ee487f4bf5ed9570e458c641066e74dcd5dd390dbcde21b811debb4e34028bc0"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "unit",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "interpretation": "This unit was selected for review under the configured capacity policy."
+        },
+        {
+          "evidence_ids": [
+            "E03",
+            "E04",
+            "E05",
+            "E06"
+          ],
+          "interpretation": "Several measurements show log-odds contributions that deviate from their training percentiles."
+        },
+        {
+          "evidence_ids": [
+            "E08",
+            "E09",
+            "E10",
+            "E11"
+          ],
+          "interpretation": "Some measurements have log-odds contributions that are notably negative compared to their training distributions."
+        },
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "interpretation": "The priority score is not a calibrated probability."
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "31dca07dd492d4da13afeb2e1f6acd66d29f491fdfca4e46e3e6cbc4baaabf48",
+      "generated_at": "2026-10-01T20:31:30.394248+00:00",
+      "evidence_hash": "ee487f4bf5ed9570e458c641066e74dcd5dd390dbcde21b811debb4e34028bc0",
+      "prompt_version": "1.2",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 24.618,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  }
+}

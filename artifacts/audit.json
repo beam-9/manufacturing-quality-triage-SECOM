@@ -1,0 +1,36 @@
+{
+  "raw_records": 1567,
+  "raw_measurements": 590,
+  "raw_failures": 104,
+  "missing_fraction": 0.04537548808583821,
+  "all_null_columns": 0,
+  "constant_columns": 116,
+  "duplicate_rows": 0,
+  "partitions": [
+    {
+      "partition": "train",
+      "records": 940,
+      "failures": 76,
+      "missing_fraction": 0.05142084385142445,
+      "start": "2008-07-19 11:55:00",
+      "end": "2008-09-20 05:34:00"
+    },
+    {
+      "partition": "validation",
+      "records": 313,
+      "failures": 11,
+      "missing_fraction": 0.034185303514377,
+      "start": "2008-09-20 06:08:00",
+      "end": "2008-10-02 19:25:00"
+    },
+    {
+      "partition": "test",
+      "records": 314,
+      "failures": 17,
+      "missing_fraction": 0.038432473280794556,
+      "start": "2008-10-02 20:54:00",
+      "end": "2008-10-17 06:07:00"
+    }
+  ],
+  "exclusions": {}
+}

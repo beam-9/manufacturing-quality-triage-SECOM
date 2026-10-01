@@ -1,0 +1,217 @@
+{
+  "run_id": "9ab3115398f717e5",
+  "evaluated_at": "2026-10-01T20:17:38.185219+00:00",
+  "policy_capacity": 0.2,
+  "models": {
+    "dummy": {
+      "validation": {
+        "metrics": {
+          "records": 313,
+          "failures": 11,
+          "reviewed": 63,
+          "captured": 0,
+          "false_alarms": 63,
+          "missed": 11,
+          "true_negatives": 239,
+          "precision": 0.0,
+          "recall": 0.0,
+          "average_precision": 0.03514376996805112,
+          "random_expected_captured": 2.2140575079872202
+        },
+        "uncertainty": {
+          "repeats": 1000,
+          "method": "stratified percentile bootstrap, conditional on observed prevalence",
+          "caveat": "Temporal dependence can make these approximate 95% intervals optimistic.",
+          "intervals": {
+            "precision": [
+              0.0,
+              0.0
+            ],
+            "recall": [
+              0.0,
+              0.0
+            ],
+            "average_precision": [
+              0.03514376996805112,
+              0.03514376996805112
+            ]
+          }
+        }
+      },
+      "test": {
+        "metrics": {
+          "records": 314,
+          "failures": 17,
+          "reviewed": 63,
+          "captured": 3,
+          "false_alarms": 60,
+          "missed": 14,
+          "true_negatives": 237,
+          "precision": 0.047619047619047616,
+          "recall": 0.17647058823529413,
+          "average_precision": 0.054140127388535034,
+          "random_expected_captured": 3.410828025477707
+        },
+        "uncertainty": {
+          "repeats": 1000,
+          "method": "stratified percentile bootstrap, conditional on observed prevalence",
+          "caveat": "Temporal dependence can make these approximate 95% intervals optimistic.",
+          "intervals": {
+            "precision": [
+              0.0,
+              0.1111111111111111
+            ],
+            "recall": [
+              0.0,
+              0.4117647058823529
+            ],
+            "average_precision": [
+              0.054140127388535034,
+              0.054140127388535034
+            ]
+          }
+        }
+      }
+    },
+    "logistic": {
+      "validation": {
+        "metrics": {
+          "records": 313,
+          "failures": 11,
+          "reviewed": 63,
+          "captured": 0,
+          "false_alarms": 63,
+          "missed": 11,
+          "true_negatives": 239,
+          "precision": 0.0,
+          "recall": 0.0,
+          "average_precision": 0.03211444569514532,
+          "random_expected_captured": 2.2140575079872202
+        },
+        "uncertainty": {
+          "repeats": 1000,
+          "method": "stratified percentile bootstrap, conditional on observed prevalence",
+          "caveat": "Temporal dependence can make these approximate 95% intervals optimistic.",
+          "intervals": {
+            "precision": [
+              0.0,
+              0.0003968253968250359
+            ],
+            "recall": [
+              0.0,
+              0.0022727272727252057
+            ],
+            "average_precision": [
+              0.02793544588051077,
+              0.050060493556595864
+            ]
+          }
+        }
+      },
+      "test": {
+        "metrics": {
+          "records": 314,
+          "failures": 17,
+          "reviewed": 63,
+          "captured": 7,
+          "false_alarms": 56,
+          "missed": 10,
+          "true_negatives": 241,
+          "precision": 0.1111111111111111,
+          "recall": 0.4117647058823529,
+          "average_precision": 0.08610847906475459,
+          "random_expected_captured": 3.410828025477707
+        },
+        "uncertainty": {
+          "repeats": 1000,
+          "method": "stratified percentile bootstrap, conditional on observed prevalence",
+          "caveat": "Temporal dependence can make these approximate 95% intervals optimistic.",
+          "intervals": {
+            "precision": [
+              0.047619047619047616,
+              0.15873015873015872
+            ],
+            "recall": [
+              0.17647058823529413,
+              0.5882352941176471
+            ],
+            "average_precision": [
+              0.06271076491239147,
+              0.14652779039508176
+            ]
+          }
+        }
+      }
+    },
+    "forest": {
+      "validation": {
+        "metrics": {
+          "records": 313,
+          "failures": 11,
+          "reviewed": 63,
+          "captured": 3,
+          "false_alarms": 60,
+          "missed": 8,
+          "true_negatives": 242,
+          "precision": 0.047619047619047616,
+          "recall": 0.2727272727272727,
+          "average_precision": 0.05212544118233443,
+          "random_expected_captured": 2.2140575079872202
+        },
+        "uncertainty": {
+          "repeats": 1000,
+          "method": "stratified percentile bootstrap, conditional on observed prevalence",
+          "caveat": "Temporal dependence can make these approximate 95% intervals optimistic.",
+          "intervals": {
+            "precision": [
+              0.0,
+              0.09523809523809523
+            ],
+            "recall": [
+              0.0,
+              0.5454545454545454
+            ],
+            "average_precision": [
+              0.0382116160759957,
+              0.09975736014560717
+            ]
+          }
+        }
+      },
+      "test": {
+        "metrics": {
+          "records": 314,
+          "failures": 17,
+          "reviewed": 63,
+          "captured": 3,
+          "false_alarms": 60,
+          "missed": 14,
+          "true_negatives": 237,
+          "precision": 0.047619047619047616,
+          "recall": 0.17647058823529413,
+          "average_precision": 0.06812615765438973,
+          "random_expected_captured": 3.410828025477707
+        },
+        "uncertainty": {
+          "repeats": 1000,
+          "method": "stratified percentile bootstrap, conditional on observed prevalence",
+          "caveat": "Temporal dependence can make these approximate 95% intervals optimistic.",
+          "intervals": {
+            "precision": [
+              0.0,
+              0.09523809523809523
+            ],
+            "recall": [
+              0.0,
+              0.35294117647058826
+            ],
+            "average_precision": [
+              0.044134015657556806,
+              0.17916283209086234
+            ]
+          }
+        }
+      }
+    }
+  }
+}

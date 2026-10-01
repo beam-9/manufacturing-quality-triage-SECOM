@@ -1,0 +1,29 @@
+{
+  "downloaded_at": "2026-10-01T20:12:48.005456+00:00",
+  "source": "UCI SECOM",
+  "classification": "public historical observations",
+  "license": "CC BY 4.0",
+  "attribution": "McCann, M. & Johnston, A. (2008). SECOM. DOI:10.24432/C54305",
+  "dataset_url": "https://archive.ics.uci.edu/dataset/179/secom",
+  "sources": [
+    {
+      "file": "secom.data",
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/secom/secom.data",
+      "bytes": 5389983,
+      "sha256": "20f0e7ee434f7dcbae0eea9ffff009a2b57f42d6b0dc9a5bd4f00782c0a3374c"
+    },
+    {
+      "file": "secom_labels.data",
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/secom/secom_labels.data",
+      "bytes": 40638,
+      "sha256": "126884cf453705c9e61a903fe906f0665a3b45ce3639e621edc5c93c89627e03"
+    },
+    {
+      "file": "secom.names",
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/secom/secom.names",
+      "bytes": 4223,
+      "sha256": "6d91b0b46cdee03064ee3e3112f937c1b3f7fcd9933575794ec07974e6f1ea59"
+    }
+  ],
+  "timestamp_timezone": "Unspecified by publisher; retained as naive source time"
+}
