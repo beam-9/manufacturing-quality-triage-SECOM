@@ -32,6 +32,11 @@ class TrainingQuantileClip(BaseEstimator, TransformerMixin):
 
 
 def candidate_pipeline(params):
+    """Historical v2 recipe, including its mask-clipping flaw; use improve-budget now.
+
+    Kept unchanged so published v2 artifacts remain reproducible, not recommended
+    as the corrected preparation implementation.
+    """
     steps = [("filter", FeatureFilter()),
              ("impute", SimpleImputer(strategy="median", add_indicator=True))]
     if params["clip"]:

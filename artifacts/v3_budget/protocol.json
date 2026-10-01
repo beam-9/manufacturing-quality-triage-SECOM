@@ -1,0 +1,233 @@
+{
+  "at": "2026-10-01T21:02:25.097367+00:00",
+  "seed": 42,
+  "parent_run": "9ab3115398f717e5",
+  "objective": "Mean recall at 20% workload; ties: worst-fold recall, then mean AP; stable grid order",
+  "grid": [
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": 20,
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": 20,
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": 20,
+        "C": 1.0
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": "all",
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": "all",
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": "all",
+        "C": 1.0
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": 20,
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": 20,
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": 20,
+        "C": 1.0
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": "all",
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": "all",
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": "all",
+        "C": 1.0
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": 20,
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": 20,
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": 20,
+        "C": 1.0
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": "all",
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": "all",
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": "all",
+        "C": 1.0
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": 20,
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": 20,
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": 20,
+        "C": 1.0
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": "all",
+        "C": 0.01
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": "all",
+        "C": 0.1
+      }
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": "all",
+        "C": 1.0
+      }
+    },
+    {
+      "name": "v1_logistic_reference",
+      "params": {
+        "C": 0.01
+      }
+    }
+  ],
+  "folds": "Three expanding complete-timestamp-group folds within original training",
+  "exposure": "Original validation/test already inspected. Validation remains development-only; test is not scored or used to select recipes.",
+  "promotion": "No automatic promotion. Requires stable gains and independent new evidence."
+}

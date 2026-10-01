@@ -1,0 +1,1864 @@
+{
+  "protocol": {
+    "at": "2026-10-01T21:03:47.800219+00:00",
+    "seed": 42,
+    "parent_run": "9ab3115398f717e5",
+    "objective": "Converged candidates only; mean recall at 20% workload; ties: worst-fold recall, then mean AP; stable grid order",
+    "grid": [
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": false,
+          "features": 20,
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": false,
+          "features": 20,
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": false,
+          "features": 20,
+          "C": 1.0
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": false,
+          "features": "all",
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": false,
+          "features": "all",
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": false,
+          "features": "all",
+          "C": 1.0
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": true,
+          "features": 20,
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": true,
+          "features": 20,
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": true,
+          "features": 20,
+          "C": 1.0
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": true,
+          "features": "all",
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": true,
+          "features": "all",
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": false,
+          "robust": true,
+          "features": "all",
+          "C": 1.0
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": false,
+          "features": 20,
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": false,
+          "features": 20,
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": false,
+          "features": 20,
+          "C": 1.0
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": false,
+          "features": "all",
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": false,
+          "features": "all",
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": false,
+          "features": "all",
+          "C": 1.0
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": true,
+          "features": 20,
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": true,
+          "features": 20,
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": true,
+          "features": 20,
+          "C": 1.0
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": true,
+          "features": "all",
+          "C": 0.01
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": true,
+          "features": "all",
+          "C": 0.1
+        }
+      },
+      {
+        "name": "corrected_logistic",
+        "params": {
+          "clip": true,
+          "robust": true,
+          "features": "all",
+          "C": 1.0
+        }
+      },
+      {
+        "name": "v1_logistic_reference",
+        "params": {
+          "C": 0.01
+        }
+      }
+    ],
+    "folds": "Three expanding complete-timestamp-group folds within original training",
+    "exposure": "Original validation/test already inspected. Validation remains development-only; test is not scored or used to select recipes.",
+    "promotion": "No automatic promotion. Requires stable gains and independent new evidence."
+  },
+  "fold_diagnostics": [
+    {
+      "fold": 1,
+      "valid": true,
+      "train_records": 232,
+      "review_records": 238,
+      "failures": 26,
+      "reason": null
+    },
+    {
+      "fold": 2,
+      "valid": true,
+      "train_records": 470,
+      "review_records": 237,
+      "failures": 8,
+      "reason": null
+    },
+    {
+      "fold": 3,
+      "valid": true,
+      "train_records": 707,
+      "review_records": 233,
+      "failures": 10,
+      "reason": null
+    }
+  ],
+  "candidates": [
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": 20,
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 9,
+          "false_alarms": 39,
+          "missed": 17,
+          "true_negatives": 173,
+          "precision": 0.1875,
+          "recall": 0.34615384615384615,
+          "average_precision": 0.13399456337967075,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.11501247734580655,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 4,
+          "false_alarms": 43,
+          "missed": 6,
+          "true_negatives": 180,
+          "precision": 0.0851063829787234,
+          "recall": 0.4,
+          "average_precision": 0.09430329321199349,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.11443677797915693,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.4153846153846154,
+        0.34615384615384615,
+        0.11443677797915693
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": 20,
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 7,
+          "false_alarms": 41,
+          "missed": 19,
+          "true_negatives": 171,
+          "precision": 0.14583333333333334,
+          "recall": 0.2692307692307692,
+          "average_precision": 0.13182777212628397,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.12892468630791584,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 5,
+          "false_alarms": 42,
+          "missed": 5,
+          "true_negatives": 181,
+          "precision": 0.10638297872340426,
+          "recall": 0.5,
+          "average_precision": 0.19821949282935805,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.15299065042118595,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.4230769230769231,
+        0.2692307692307692,
+        0.15299065042118595
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": 20,
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 6,
+          "false_alarms": 42,
+          "missed": 20,
+          "true_negatives": 170,
+          "precision": 0.125,
+          "recall": 0.23076923076923078,
+          "average_precision": 0.13421870979929687,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.15145923997956612,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 5,
+          "false_alarms": 42,
+          "missed": 5,
+          "true_negatives": 181,
+          "precision": 0.10638297872340426,
+          "recall": 0.5,
+          "average_precision": 0.15755573570633752,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.14774456182840015,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.4102564102564103,
+        0.23076923076923078,
+        0.14774456182840015
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": "all",
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 3,
+          "false_alarms": 45,
+          "missed": 23,
+          "true_negatives": 167,
+          "precision": 0.0625,
+          "recall": 0.11538461538461539,
+          "average_precision": 0.09545815055711758,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.11190983886456432,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.14293188893541753,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.11676662611903314,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.18846153846153846,
+        0.11538461538461539,
+        0.11676662611903314
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": "all",
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 3,
+          "false_alarms": 45,
+          "missed": 23,
+          "true_negatives": 167,
+          "precision": 0.0625,
+          "recall": 0.11538461538461539,
+          "average_precision": 0.09470152566632101,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.10676593901813639,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.0766407894407979,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.0927027513750851,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.2717948717948718,
+        0.11538461538461539,
+        0.0927027513750851
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": false,
+        "features": "all",
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 24,
+          "true_negatives": 166,
+          "precision": 0.041666666666666664,
+          "recall": 0.07692307692307693,
+          "average_precision": 0.09517619955504569,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.07227783566473539,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.061910596582990016,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.07645487726759037,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.17564102564102566,
+        0.07692307692307693,
+        0.07645487726759037
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": 20,
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 6,
+          "false_alarms": 42,
+          "missed": 20,
+          "true_negatives": 170,
+          "precision": 0.125,
+          "recall": 0.23076923076923078,
+          "average_precision": 0.12025464291464827,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.15182813449244242,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 4,
+          "false_alarms": 43,
+          "missed": 6,
+          "true_negatives": 180,
+          "precision": 0.0851063829787234,
+          "recall": 0.4,
+          "average_precision": 0.09689305907366699,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.1229919454935859,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.3769230769230769,
+        0.23076923076923078,
+        0.1229919454935859
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": 20,
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 6,
+          "false_alarms": 42,
+          "missed": 20,
+          "true_negatives": 170,
+          "precision": 0.125,
+          "recall": 0.23076923076923078,
+          "average_precision": 0.12588352637559322,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.1291131494879123,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 5,
+          "false_alarms": 42,
+          "missed": 5,
+          "true_negatives": 181,
+          "precision": 0.10638297872340426,
+          "recall": 0.5,
+          "average_precision": 0.14729468692851527,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.13409712093067358,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.4102564102564103,
+        0.23076923076923078,
+        0.13409712093067358
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": 20,
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 5,
+          "false_alarms": 43,
+          "missed": 21,
+          "true_negatives": 169,
+          "precision": 0.10416666666666667,
+          "recall": 0.19230769230769232,
+          "average_precision": 0.129613660298613,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.1509700661977702,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 5,
+          "false_alarms": 42,
+          "missed": 5,
+          "true_negatives": 181,
+          "precision": 0.10638297872340426,
+          "recall": 0.5,
+          "average_precision": 0.1465045903962452,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.1423627722975428,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.3974358974358974,
+        0.19230769230769232,
+        0.1423627722975428
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": "all",
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 24,
+          "true_negatives": 166,
+          "precision": 0.041666666666666664,
+          "recall": 0.07692307692307693,
+          "average_precision": 0.08435843603779083,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.0979122874949158,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.14076311419046503,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.10767794590772388,
+      "fit_warnings": [
+        {
+          "fold": 3,
+          "category": "ConvergenceWarning",
+          "message": "lbfgs failed to converge after 4000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=4000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        }
+      ],
+      "eligible_for_selection": false,
+      "selection_key": [
+        0.17564102564102566,
+        0.07692307692307693,
+        0.10767794590772388
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": "all",
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 24,
+          "true_negatives": 166,
+          "precision": 0.041666666666666664,
+          "recall": 0.07692307692307693,
+          "average_precision": 0.08638856390224145,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.06677452234362743,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.07657473847983048,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.07657927490856646,
+      "fit_warnings": [
+        {
+          "fold": 3,
+          "category": "ConvergenceWarning",
+          "message": "lbfgs failed to converge after 4000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=4000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        }
+      ],
+      "eligible_for_selection": false,
+      "selection_key": [
+        0.17564102564102566,
+        0.07692307692307693,
+        0.07657927490856646
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": false,
+        "robust": true,
+        "features": "all",
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 24,
+          "true_negatives": 166,
+          "precision": 0.041666666666666664,
+          "recall": 0.07692307692307693,
+          "average_precision": 0.08868543693737407,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.06570907280475423,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.07835310467234942,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.07758253813815924,
+      "fit_warnings": [
+        {
+          "fold": 3,
+          "category": "ConvergenceWarning",
+          "message": "lbfgs failed to converge after 4000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=4000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+        }
+      ],
+      "eligible_for_selection": false,
+      "selection_key": [
+        0.17564102564102566,
+        0.07692307692307693,
+        0.07758253813815924
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": 20,
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 6,
+          "false_alarms": 42,
+          "missed": 20,
+          "true_negatives": 170,
+          "precision": 0.125,
+          "recall": 0.23076923076923078,
+          "average_precision": 0.125758676535465,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.19960932016220348,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 4,
+          "false_alarms": 43,
+          "missed": 6,
+          "true_negatives": 180,
+          "precision": 0.0851063829787234,
+          "recall": 0.4,
+          "average_precision": 0.09228139815537964,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.13921646495101603,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.3769230769230769,
+        0.23076923076923078,
+        0.13921646495101603
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": 20,
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 5,
+          "false_alarms": 43,
+          "missed": 21,
+          "true_negatives": 169,
+          "precision": 0.10416666666666667,
+          "recall": 0.19230769230769232,
+          "average_precision": 0.1308134266131082,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.21287170715546774,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 4,
+          "false_alarms": 43,
+          "missed": 6,
+          "true_negatives": 180,
+          "precision": 0.0851063829787234,
+          "recall": 0.4,
+          "average_precision": 0.16742531057842028,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.17037014811566542,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.36410256410256414,
+        0.19230769230769232,
+        0.17037014811566542
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": 20,
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 6,
+          "false_alarms": 42,
+          "missed": 20,
+          "true_negatives": 170,
+          "precision": 0.125,
+          "recall": 0.23076923076923078,
+          "average_precision": 0.13480894583898023,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.223994000841386,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 3,
+          "false_alarms": 44,
+          "missed": 7,
+          "true_negatives": 179,
+          "precision": 0.06382978723404255,
+          "recall": 0.3,
+          "average_precision": 0.10718286014292101,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.15532860227442907,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.34358974358974365,
+        0.23076923076923078,
+        0.15532860227442907
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": "all",
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 24,
+          "true_negatives": 166,
+          "precision": 0.041666666666666664,
+          "recall": 0.07692307692307693,
+          "average_precision": 0.09271628698808901,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.07863305248537683,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.07363704480163316,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.08166212809169966,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.17564102564102566,
+        0.07692307692307693,
+        0.08166212809169966
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": "all",
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 24,
+          "true_negatives": 166,
+          "precision": 0.041666666666666664,
+          "recall": 0.07692307692307693,
+          "average_precision": 0.09555525486675388,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.0658051616468642,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.06330476072147453,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.07488839241169755,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.17564102564102566,
+        0.07692307692307693,
+        0.07488839241169755
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": false,
+        "features": "all",
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 24,
+          "true_negatives": 166,
+          "precision": 0.041666666666666664,
+          "recall": 0.07692307692307693,
+          "average_precision": 0.09740234152475923,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 2,
+          "false_alarms": 46,
+          "missed": 6,
+          "true_negatives": 183,
+          "precision": 0.041666666666666664,
+          "recall": 0.25,
+          "average_precision": 0.05895794719016642,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.05655484422506562,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.07097171097999709,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.17564102564102566,
+        0.07692307692307693,
+        0.07097171097999709
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": 20,
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 22,
+          "true_negatives": 168,
+          "precision": 0.08333333333333333,
+          "recall": 0.15384615384615385,
+          "average_precision": 0.11695402542131357,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.20233835860323435,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 4,
+          "false_alarms": 43,
+          "missed": 6,
+          "true_negatives": 180,
+          "precision": 0.0851063829787234,
+          "recall": 0.4,
+          "average_precision": 0.08339458633951202,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.1342289901213533,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.3512820512820513,
+        0.15384615384615385,
+        0.1342289901213533
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": 20,
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 5,
+          "false_alarms": 43,
+          "missed": 21,
+          "true_negatives": 169,
+          "precision": 0.10416666666666667,
+          "recall": 0.19230769230769232,
+          "average_precision": 0.12398601169835179,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.2143703880515417,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 4,
+          "false_alarms": 43,
+          "missed": 6,
+          "true_negatives": 180,
+          "precision": 0.0851063829787234,
+          "recall": 0.4,
+          "average_precision": 0.16976180500108168,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.1693727349169917,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.36410256410256414,
+        0.19230769230769232,
+        0.1693727349169917
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": 20,
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 6,
+          "false_alarms": 42,
+          "missed": 20,
+          "true_negatives": 170,
+          "precision": 0.125,
+          "recall": 0.23076923076923078,
+          "average_precision": 0.13285305294243183,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 4,
+          "true_negatives": 185,
+          "precision": 0.08333333333333333,
+          "recall": 0.5,
+          "average_precision": 0.2218394403567276,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 3,
+          "false_alarms": 44,
+          "missed": 7,
+          "true_negatives": 179,
+          "precision": 0.06382978723404255,
+          "recall": 0.3,
+          "average_precision": 0.10914992229024652,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.15461413852980196,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.34358974358974365,
+        0.23076923076923078,
+        0.15461413852980196
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": "all",
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 1,
+          "false_alarms": 47,
+          "missed": 25,
+          "true_negatives": 165,
+          "precision": 0.020833333333333332,
+          "recall": 0.038461538461538464,
+          "average_precision": 0.09042748303780311,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 3,
+          "false_alarms": 45,
+          "missed": 5,
+          "true_negatives": 184,
+          "precision": 0.0625,
+          "recall": 0.375,
+          "average_precision": 0.06492953999781731,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.1437183250656113,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.09969178270041057,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.2044871794871795,
+        0.038461538461538464,
+        0.09969178270041057
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": "all",
+        "C": 0.1
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 1,
+          "false_alarms": 47,
+          "missed": 25,
+          "true_negatives": 165,
+          "precision": 0.020833333333333332,
+          "recall": 0.038461538461538464,
+          "average_precision": 0.09248416035933676,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 3,
+          "false_alarms": 45,
+          "missed": 5,
+          "true_negatives": 184,
+          "precision": 0.0625,
+          "recall": 0.375,
+          "average_precision": 0.060479747804459555,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.08510398770072734,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.07935596528817455,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.2044871794871795,
+        0.038461538461538464,
+        0.07935596528817455
+      ]
+    },
+    {
+      "name": "corrected_logistic",
+      "params": {
+        "clip": true,
+        "robust": true,
+        "features": "all",
+        "C": 1.0
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 1,
+          "false_alarms": 47,
+          "missed": 25,
+          "true_negatives": 165,
+          "precision": 0.020833333333333332,
+          "recall": 0.038461538461538464,
+          "average_precision": 0.09359853878272117,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 3,
+          "false_alarms": 45,
+          "missed": 5,
+          "true_negatives": 184,
+          "precision": 0.0625,
+          "recall": 0.375,
+          "average_precision": 0.05466228124205559,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.08028124505080877,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.07618068835852851,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.2044871794871795,
+        0.038461538461538464,
+        0.07618068835852851
+      ]
+    },
+    {
+      "name": "v1_logistic_reference",
+      "params": {
+        "C": 0.01
+      },
+      "folds": [
+        {
+          "records": 238,
+          "failures": 26,
+          "reviewed": 48,
+          "captured": 4,
+          "false_alarms": 44,
+          "missed": 22,
+          "true_negatives": 168,
+          "precision": 0.08333333333333333,
+          "recall": 0.15384615384615385,
+          "average_precision": 0.09503597746170386,
+          "random_expected_captured": 5.243697478991597
+        },
+        {
+          "records": 237,
+          "failures": 8,
+          "reviewed": 48,
+          "captured": 1,
+          "false_alarms": 47,
+          "missed": 7,
+          "true_negatives": 182,
+          "precision": 0.020833333333333332,
+          "recall": 0.125,
+          "average_precision": 0.1044441973157411,
+          "random_expected_captured": 1.6202531645569618
+        },
+        {
+          "records": 233,
+          "failures": 10,
+          "reviewed": 47,
+          "captured": 2,
+          "false_alarms": 45,
+          "missed": 8,
+          "true_negatives": 178,
+          "precision": 0.0425531914893617,
+          "recall": 0.2,
+          "average_precision": 0.08794535342021445,
+          "random_expected_captured": 2.017167381974249
+        }
+      ],
+      "mean_average_precision": 0.09580850939921981,
+      "fit_warnings": [],
+      "eligible_for_selection": true,
+      "selection_key": [
+        0.15961538461538463,
+        0.125,
+        0.09580850939921981
+      ]
+    }
+  ],
+  "selected": {
+    "name": "corrected_logistic",
+    "params": {
+      "clip": false,
+      "robust": false,
+      "features": 20,
+      "C": 0.1
+    },
+    "folds": [
+      {
+        "records": 238,
+        "failures": 26,
+        "reviewed": 48,
+        "captured": 7,
+        "false_alarms": 41,
+        "missed": 19,
+        "true_negatives": 171,
+        "precision": 0.14583333333333334,
+        "recall": 0.2692307692307692,
+        "average_precision": 0.13182777212628397,
+        "random_expected_captured": 5.243697478991597
+      },
+      {
+        "records": 237,
+        "failures": 8,
+        "reviewed": 48,
+        "captured": 4,
+        "false_alarms": 44,
+        "missed": 4,
+        "true_negatives": 185,
+        "precision": 0.08333333333333333,
+        "recall": 0.5,
+        "average_precision": 0.12892468630791584,
+        "random_expected_captured": 1.6202531645569618
+      },
+      {
+        "records": 233,
+        "failures": 10,
+        "reviewed": 47,
+        "captured": 5,
+        "false_alarms": 42,
+        "missed": 5,
+        "true_negatives": 181,
+        "precision": 0.10638297872340426,
+        "recall": 0.5,
+        "average_precision": 0.19821949282935805,
+        "random_expected_captured": 2.017167381974249
+      }
+    ],
+    "mean_average_precision": 0.15299065042118595,
+    "fit_warnings": [],
+    "eligible_for_selection": true,
+    "selection_key": [
+      0.4230769230769231,
+      0.2692307692307692,
+      0.15299065042118595
+    ]
+  },
+  "full_fit_warnings": [],
+  "development_capacity_metrics": {
+    "0.1": {
+      "records": 313,
+      "failures": 11,
+      "reviewed": 32,
+      "captured": 1,
+      "false_alarms": 31,
+      "missed": 10,
+      "true_negatives": 271,
+      "precision": 0.03125,
+      "recall": 0.09090909090909091,
+      "average_precision": 0.05096957256482264,
+      "random_expected_captured": 1.1246006389776357
+    },
+    "0.2": {
+      "records": 313,
+      "failures": 11,
+      "reviewed": 63,
+      "captured": 3,
+      "false_alarms": 60,
+      "missed": 8,
+      "true_negatives": 242,
+      "precision": 0.047619047619047616,
+      "recall": 0.2727272727272727,
+      "average_precision": 0.05096957256482264,
+      "random_expected_captured": 2.2140575079872202
+    },
+    "0.3": {
+      "records": 313,
+      "failures": 11,
+      "reviewed": 94,
+      "captured": 3,
+      "false_alarms": 91,
+      "missed": 8,
+      "true_negatives": 211,
+      "precision": 0.031914893617021274,
+      "recall": 0.2727272727272727,
+      "average_precision": 0.05096957256482264,
+      "random_expected_captured": 3.303514376996805
+    },
+    "0.5": {
+      "records": 313,
+      "failures": 11,
+      "reviewed": 157,
+      "captured": 8,
+      "false_alarms": 149,
+      "missed": 3,
+      "true_negatives": 153,
+      "precision": 0.050955414012738856,
+      "recall": 0.7272727272727273,
+      "average_precision": 0.05096957256482264,
+      "random_expected_captured": 5.517571884984025
+    }
+  },
+  "selected_feature_names": [
+    "Measurement 021",
+    "Measurement 022",
+    "Measurement 028",
+    "Measurement 059",
+    "Measurement 064",
+    "Measurement 103",
+    "Measurement 122",
+    "Measurement 163",
+    "Measurement 166",
+    "Measurement 298",
+    "Measurement 430",
+    "Measurement 431",
+    "Measurement 434",
+    "Measurement 435",
+    "Measurement 436",
+    "Measurement 437",
+    "missingindicator_Measurement 072",
+    "missingindicator_Measurement 073",
+    "missingindicator_Measurement 345",
+    "missingindicator_Measurement 346"
+  ],
+  "selection_warnings": []
+}

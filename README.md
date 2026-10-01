@@ -25,6 +25,10 @@ Local browser and automated dashboard checks were completed; full desktop/mobile
 
 ## Run the included demo
 
+### Current improvement work
+
+The [budget-aligned study](docs/budget_improvement.md) fixes experimental missingness treatment, uses whole-timestamp folds and selects converged candidates by recall at 20% workload. The chosen 20-feature logistic captures 3/11 development failures versus v1 logistic's 0/11, but only matches the original forest and is **not promoted**. Run `triage improve-budget` in a separate checkout with official raw files and no existing `artifacts/v3_budget_verified` output; the published v1 dashboard remains frozen.
+
 Python **3.11** is the tested runtime. No model download or source-data download is needed to explore the committed demo artifacts.
 
 ```bash

@@ -3,11 +3,12 @@ from triage.data import download
 from triage.model import train, evaluate
 from triage.briefs import build_demo, evaluate_summaries
 from triage.experiments import improve, nonlinear_study
+from triage.study import improve_budget
 
 
 def main():
     parser = argparse.ArgumentParser(description="Reproducible SECOM retrospective triage")
-    parser.add_argument("command", choices=["download", "train", "evaluate", "build-demo", "evaluate-summaries", "improve", "compare-nonlinear"])
+    parser.add_argument("command", choices=["download", "train", "evaluate", "build-demo", "evaluate-summaries", "improve", "compare-nonlinear", "improve-budget"])
     parser.add_argument("--live", action="store_true", help="Generate locally with Ollama; default is labeled templates")
     args = parser.parse_args()
     if args.command == "download":
@@ -22,6 +23,8 @@ def main():
         improve()
     elif args.command == "compare-nonlinear":
         nonlinear_study()
+    elif args.command == "improve-budget":
+        improve_budget()
     else:
         print(evaluate_summaries(live=args.live))
 
