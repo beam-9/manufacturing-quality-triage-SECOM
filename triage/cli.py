@@ -2,11 +2,12 @@ import argparse
 from triage.data import download
 from triage.model import train, evaluate
 from triage.briefs import build_demo, evaluate_summaries
+from triage.experiments import improve, nonlinear_study
 
 
 def main():
     parser = argparse.ArgumentParser(description="Reproducible SECOM retrospective triage")
-    parser.add_argument("command", choices=["download", "train", "evaluate", "build-demo", "evaluate-summaries"])
+    parser.add_argument("command", choices=["download", "train", "evaluate", "build-demo", "evaluate-summaries", "improve", "compare-nonlinear"])
     parser.add_argument("--live", action="store_true", help="Generate locally with Ollama; default is labeled templates")
     args = parser.parse_args()
     if args.command == "download":
@@ -17,10 +18,13 @@ def main():
         evaluate()
     elif args.command == "build-demo":
         build_demo(live=args.live)
+    elif args.command == "improve":
+        improve()
+    elif args.command == "compare-nonlinear":
+        nonlinear_study()
     else:
         print(evaluate_summaries(live=args.live))
 
 
 if __name__ == "__main__":
     main()
-

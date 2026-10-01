@@ -17,7 +17,11 @@ The 20% capacity is an illustrative, predefined policy—not a Seagate operation
 - Structured Ollama report composition with evidence-supported finding types, reference/predicate validation, one repair attempt, deterministic fallback, and SQLite audit/review logs.
 - Streamlit review queue, performance, and methods views; CSV/Markdown exports; a hosted mode that never calls Ollama.
 
-See [results](docs/results.md), [model and data cards](docs/model_and_data_cards.md), [summary evaluation](docs/summary_evaluation.md), and [application talking points](docs/application_handoff.md). Screenshots and a verified live URL will be added only after actual inspection/deployment.
+See [results](docs/results.md), [model improvement study](docs/model_development.md), [model and data cards](docs/model_and_data_cards.md), [summary evaluation](docs/summary_evaluation.md), and [application talking points](docs/application_handoff.md). **No public site has been deployed; hosting is paused while model quality is investigated.** The development study is not promoted into the frozen queue.
+
+![Locally inspected performance view](docs/screenshots/performance.jpg)
+
+Local browser and automated dashboard checks were completed; full desktop/mobile visual acceptance and end-user brief review remain unfinished.
 
 ## Run the included demo
 

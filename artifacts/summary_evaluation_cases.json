@@ -3603,5 +3603,932 @@
       "review_status": "unreviewed",
       "errors": []
     }
+  },
+  {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "record_ids": [
+        "SECOM-1084",
+        "SECOM-1137",
+        "SECOM-1192",
+        "SECOM-1032",
+        "SECOM-1252",
+        "SECOM-1103",
+        "SECOM-0943",
+        "SECOM-1110",
+        "SECOM-1218",
+        "SECOM-1249",
+        "SECOM-1139",
+        "SECOM-1107",
+        "SECOM-1187",
+        "SECOM-0949",
+        "SECOM-1033",
+        "SECOM-1225",
+        "SECOM-0940",
+        "SECOM-0951",
+        "SECOM-1245",
+        "SECOM-1082",
+        "SECOM-0958",
+        "SECOM-0970",
+        "SECOM-1055",
+        "SECOM-1113",
+        "SECOM-1065",
+        "SECOM-1118",
+        "SECOM-1181",
+        "SECOM-1230",
+        "SECOM-1031",
+        "SECOM-1191",
+        "SECOM-1063",
+        "SECOM-1246"
+      ],
+      "population_hash": "7368e2bc482b2414d00fa632363c49aac505a8ea1ca4860ec5285c2928de2dad",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.1,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Selected 32 of 313 records at 10% review capacity.",
+          "measurement": null,
+          "signals": [
+            "batch_policy"
+          ]
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Selected priority-score range: 0.573123\u20130.955441; scores are not calibrated probabilities.",
+          "measurement": null,
+          "signals": []
+        },
+        {
+          "evidence_id": "E03",
+          "text": "8 selected records have missing inputs among the displayed explanation features; this is not an all-feature missingness count.",
+          "measurement": null,
+          "signals": [
+            "missing"
+          ]
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "5d764f281e204cfc305a4f5715ba0f7d013664da051d5ba701972607ac4cd5a1"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "finding": "batch_policy"
+        },
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "finding": "context"
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "finding": "missing"
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "e72c7101642fb2da4fda7da97feac9fccf9204207f02620c6826351377436dce",
+      "generated_at": "2026-10-01T20:42:32.161778+00:00",
+      "evidence_hash": "5d764f281e204cfc305a4f5715ba0f7d013664da051d5ba701972607ac4cd5a1",
+      "prompt_version": "2.1",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 8.976,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "record_ids": [
+        "SECOM-1084",
+        "SECOM-1137",
+        "SECOM-1192",
+        "SECOM-1032",
+        "SECOM-1252",
+        "SECOM-1103",
+        "SECOM-0943",
+        "SECOM-1110",
+        "SECOM-1218",
+        "SECOM-1249",
+        "SECOM-1139",
+        "SECOM-1107",
+        "SECOM-1187",
+        "SECOM-0949",
+        "SECOM-1033",
+        "SECOM-1225",
+        "SECOM-0940",
+        "SECOM-0951",
+        "SECOM-1245",
+        "SECOM-1082",
+        "SECOM-0958",
+        "SECOM-0970",
+        "SECOM-1055",
+        "SECOM-1113",
+        "SECOM-1065",
+        "SECOM-1118",
+        "SECOM-1181",
+        "SECOM-1230",
+        "SECOM-1031",
+        "SECOM-1191",
+        "SECOM-1063",
+        "SECOM-1246",
+        "SECOM-1023",
+        "SECOM-1109",
+        "SECOM-1049",
+        "SECOM-0965",
+        "SECOM-1097",
+        "SECOM-1222",
+        "SECOM-1209",
+        "SECOM-0946",
+        "SECOM-1027",
+        "SECOM-1248",
+        "SECOM-1061",
+        "SECOM-1045",
+        "SECOM-1017",
+        "SECOM-1141",
+        "SECOM-1240",
+        "SECOM-0972",
+        "SECOM-1160",
+        "SECOM-1219",
+        "SECOM-0985",
+        "SECOM-0999",
+        "SECOM-1034",
+        "SECOM-1146",
+        "SECOM-1147",
+        "SECOM-1138",
+        "SECOM-1117",
+        "SECOM-0973",
+        "SECOM-1162",
+        "SECOM-1076",
+        "SECOM-1196",
+        "SECOM-1205",
+        "SECOM-1104"
+      ],
+      "population_hash": "7368e2bc482b2414d00fa632363c49aac505a8ea1ca4860ec5285c2928de2dad",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.2,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Selected 63 of 313 records at 20% review capacity.",
+          "measurement": null,
+          "signals": [
+            "batch_policy"
+          ]
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Selected priority-score range: 0.435521\u20130.955441; scores are not calibrated probabilities.",
+          "measurement": null,
+          "signals": []
+        },
+        {
+          "evidence_id": "E03",
+          "text": "19 selected records have missing inputs among the displayed explanation features; this is not an all-feature missingness count.",
+          "measurement": null,
+          "signals": [
+            "missing"
+          ]
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "b0c5d18856a2ad4441b08508463e16405c35c6af9b2dbca70112e379e7ca6905"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "finding": "batch_policy"
+        },
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "finding": "context"
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "finding": "missing"
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "71740aae4184656c92673d535c88dfb534175a8ac504c1e0b9273390f029a10b",
+      "generated_at": "2026-10-01T20:42:39.245556+00:00",
+      "evidence_hash": "b0c5d18856a2ad4441b08508463e16405c35c6af9b2dbca70112e379e7ca6905",
+      "prompt_version": "2.1",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 7.079,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "record_ids": [
+        "SECOM-1084",
+        "SECOM-1137",
+        "SECOM-1192",
+        "SECOM-1032",
+        "SECOM-1252",
+        "SECOM-1103",
+        "SECOM-0943",
+        "SECOM-1110",
+        "SECOM-1218",
+        "SECOM-1249",
+        "SECOM-1139",
+        "SECOM-1107",
+        "SECOM-1187",
+        "SECOM-0949",
+        "SECOM-1033",
+        "SECOM-1225",
+        "SECOM-0940",
+        "SECOM-0951",
+        "SECOM-1245",
+        "SECOM-1082",
+        "SECOM-0958",
+        "SECOM-0970",
+        "SECOM-1055",
+        "SECOM-1113",
+        "SECOM-1065",
+        "SECOM-1118",
+        "SECOM-1181",
+        "SECOM-1230",
+        "SECOM-1031",
+        "SECOM-1191",
+        "SECOM-1063",
+        "SECOM-1246",
+        "SECOM-1023",
+        "SECOM-1109",
+        "SECOM-1049",
+        "SECOM-0965",
+        "SECOM-1097",
+        "SECOM-1222",
+        "SECOM-1209",
+        "SECOM-0946",
+        "SECOM-1027",
+        "SECOM-1248",
+        "SECOM-1061",
+        "SECOM-1045",
+        "SECOM-1017",
+        "SECOM-1141",
+        "SECOM-1240",
+        "SECOM-0972",
+        "SECOM-1160",
+        "SECOM-1219",
+        "SECOM-0985",
+        "SECOM-0999",
+        "SECOM-1034",
+        "SECOM-1146",
+        "SECOM-1147",
+        "SECOM-1138",
+        "SECOM-1117",
+        "SECOM-0973",
+        "SECOM-1162",
+        "SECOM-1076",
+        "SECOM-1196",
+        "SECOM-1205",
+        "SECOM-1104",
+        "SECOM-1036",
+        "SECOM-1100",
+        "SECOM-1052",
+        "SECOM-1089",
+        "SECOM-0962",
+        "SECOM-1207",
+        "SECOM-1124",
+        "SECOM-1235",
+        "SECOM-1007",
+        "SECOM-0968",
+        "SECOM-1064",
+        "SECOM-1035",
+        "SECOM-1227",
+        "SECOM-1208",
+        "SECOM-1101",
+        "SECOM-1019",
+        "SECOM-1070",
+        "SECOM-1121",
+        "SECOM-1066",
+        "SECOM-1171",
+        "SECOM-1008",
+        "SECOM-1010",
+        "SECOM-1013",
+        "SECOM-1043",
+        "SECOM-1200",
+        "SECOM-1156",
+        "SECOM-1142",
+        "SECOM-1188",
+        "SECOM-1057",
+        "SECOM-1114",
+        "SECOM-1030"
+      ],
+      "population_hash": "7368e2bc482b2414d00fa632363c49aac505a8ea1ca4860ec5285c2928de2dad",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.3,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Selected 94 of 313 records at 30% review capacity.",
+          "measurement": null,
+          "signals": [
+            "batch_policy"
+          ]
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Selected priority-score range: 0.315334\u20130.955441; scores are not calibrated probabilities.",
+          "measurement": null,
+          "signals": []
+        },
+        {
+          "evidence_id": "E03",
+          "text": "23 selected records have missing inputs among the displayed explanation features; this is not an all-feature missingness count.",
+          "measurement": null,
+          "signals": [
+            "missing"
+          ]
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "bbe8ff99dd7ffb9cb33331fa3c6735835238ba92f1b1093f2bcd94f84ce25d06"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "finding": "batch_policy"
+        },
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "finding": "context"
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "finding": "missing"
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "e098737ec94a0659e304472fdf21e6c7421ad0685ed4674699e847a2fc1eb780",
+      "generated_at": "2026-10-01T20:42:47.358025+00:00",
+      "evidence_hash": "bbe8ff99dd7ffb9cb33331fa3c6735835238ba92f1b1093f2bcd94f84ce25d06",
+      "prompt_version": "2.1",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 8.107,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "record_ids": [
+        "SECOM-1084",
+        "SECOM-1137",
+        "SECOM-1192",
+        "SECOM-1032",
+        "SECOM-1252",
+        "SECOM-1103",
+        "SECOM-0943",
+        "SECOM-1110",
+        "SECOM-1218",
+        "SECOM-1249",
+        "SECOM-1139",
+        "SECOM-1107",
+        "SECOM-1187",
+        "SECOM-0949",
+        "SECOM-1033",
+        "SECOM-1225",
+        "SECOM-0940",
+        "SECOM-0951",
+        "SECOM-1245",
+        "SECOM-1082",
+        "SECOM-0958",
+        "SECOM-0970",
+        "SECOM-1055",
+        "SECOM-1113",
+        "SECOM-1065",
+        "SECOM-1118",
+        "SECOM-1181",
+        "SECOM-1230",
+        "SECOM-1031",
+        "SECOM-1191",
+        "SECOM-1063",
+        "SECOM-1246",
+        "SECOM-1023",
+        "SECOM-1109",
+        "SECOM-1049",
+        "SECOM-0965",
+        "SECOM-1097",
+        "SECOM-1222",
+        "SECOM-1209",
+        "SECOM-0946",
+        "SECOM-1027",
+        "SECOM-1248",
+        "SECOM-1061",
+        "SECOM-1045",
+        "SECOM-1017",
+        "SECOM-1141",
+        "SECOM-1240",
+        "SECOM-0972",
+        "SECOM-1160",
+        "SECOM-1219",
+        "SECOM-0985",
+        "SECOM-0999",
+        "SECOM-1034",
+        "SECOM-1146",
+        "SECOM-1147",
+        "SECOM-1138",
+        "SECOM-1117",
+        "SECOM-0973",
+        "SECOM-1162",
+        "SECOM-1076",
+        "SECOM-1196",
+        "SECOM-1205",
+        "SECOM-1104",
+        "SECOM-1036",
+        "SECOM-1100",
+        "SECOM-1052",
+        "SECOM-1089",
+        "SECOM-0962",
+        "SECOM-1207",
+        "SECOM-1124",
+        "SECOM-1235",
+        "SECOM-1007",
+        "SECOM-0968",
+        "SECOM-1064",
+        "SECOM-1035",
+        "SECOM-1227",
+        "SECOM-1208",
+        "SECOM-1101",
+        "SECOM-1019",
+        "SECOM-1070",
+        "SECOM-1121",
+        "SECOM-1066",
+        "SECOM-1171",
+        "SECOM-1008",
+        "SECOM-1010",
+        "SECOM-1013",
+        "SECOM-1043",
+        "SECOM-1200",
+        "SECOM-1156",
+        "SECOM-1142",
+        "SECOM-1188",
+        "SECOM-1057",
+        "SECOM-1114",
+        "SECOM-1030",
+        "SECOM-1111",
+        "SECOM-1046",
+        "SECOM-0960",
+        "SECOM-1025",
+        "SECOM-1226",
+        "SECOM-1172",
+        "SECOM-1224",
+        "SECOM-1185",
+        "SECOM-1087",
+        "SECOM-1105",
+        "SECOM-1170",
+        "SECOM-1221",
+        "SECOM-0944",
+        "SECOM-1088",
+        "SECOM-1210",
+        "SECOM-1093",
+        "SECOM-1053",
+        "SECOM-1044",
+        "SECOM-1126",
+        "SECOM-1217",
+        "SECOM-1131",
+        "SECOM-1198",
+        "SECOM-1220",
+        "SECOM-0966",
+        "SECOM-1090",
+        "SECOM-1029",
+        "SECOM-1094",
+        "SECOM-1081",
+        "SECOM-1178",
+        "SECOM-1115",
+        "SECOM-1180",
+        "SECOM-1241"
+      ],
+      "population_hash": "7368e2bc482b2414d00fa632363c49aac505a8ea1ca4860ec5285c2928de2dad",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.4,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Selected 126 of 313 records at 40% review capacity.",
+          "measurement": null,
+          "signals": [
+            "batch_policy"
+          ]
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Selected priority-score range: 0.220069\u20130.955441; scores are not calibrated probabilities.",
+          "measurement": null,
+          "signals": []
+        },
+        {
+          "evidence_id": "E03",
+          "text": "27 selected records have missing inputs among the displayed explanation features; this is not an all-feature missingness count.",
+          "measurement": null,
+          "signals": [
+            "missing"
+          ]
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "d05cdc1e0e50a895dd6553cf63eba1caf0c203465705ffb2c57283165d2c7855"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "finding": "batch_policy"
+        },
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "finding": "context"
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "finding": "missing"
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "98c1d663aa3de8afb4bde8564b1e6b9200be9ca62570c882c35cefb049bb321e",
+      "generated_at": "2026-10-01T20:42:54.546025+00:00",
+      "evidence_hash": "d05cdc1e0e50a895dd6553cf63eba1caf0c203465705ffb2c57283165d2c7855",
+      "prompt_version": "2.1",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 7.183,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
+  },
+  {
+    "evidence": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "record_ids": [
+        "SECOM-1084",
+        "SECOM-1137",
+        "SECOM-1192",
+        "SECOM-1032",
+        "SECOM-1252",
+        "SECOM-1103",
+        "SECOM-0943",
+        "SECOM-1110",
+        "SECOM-1218",
+        "SECOM-1249",
+        "SECOM-1139",
+        "SECOM-1107",
+        "SECOM-1187",
+        "SECOM-0949",
+        "SECOM-1033",
+        "SECOM-1225",
+        "SECOM-0940",
+        "SECOM-0951",
+        "SECOM-1245",
+        "SECOM-1082",
+        "SECOM-0958",
+        "SECOM-0970",
+        "SECOM-1055",
+        "SECOM-1113",
+        "SECOM-1065",
+        "SECOM-1118",
+        "SECOM-1181",
+        "SECOM-1230",
+        "SECOM-1031",
+        "SECOM-1191",
+        "SECOM-1063",
+        "SECOM-1246",
+        "SECOM-1023",
+        "SECOM-1109",
+        "SECOM-1049",
+        "SECOM-0965",
+        "SECOM-1097",
+        "SECOM-1222",
+        "SECOM-1209",
+        "SECOM-0946",
+        "SECOM-1027",
+        "SECOM-1248",
+        "SECOM-1061",
+        "SECOM-1045",
+        "SECOM-1017",
+        "SECOM-1141",
+        "SECOM-1240",
+        "SECOM-0972",
+        "SECOM-1160",
+        "SECOM-1219",
+        "SECOM-0985",
+        "SECOM-0999",
+        "SECOM-1034",
+        "SECOM-1146",
+        "SECOM-1147",
+        "SECOM-1138",
+        "SECOM-1117",
+        "SECOM-0973",
+        "SECOM-1162",
+        "SECOM-1076",
+        "SECOM-1196",
+        "SECOM-1205",
+        "SECOM-1104",
+        "SECOM-1036",
+        "SECOM-1100",
+        "SECOM-1052",
+        "SECOM-1089",
+        "SECOM-0962",
+        "SECOM-1207",
+        "SECOM-1124",
+        "SECOM-1235",
+        "SECOM-1007",
+        "SECOM-0968",
+        "SECOM-1064",
+        "SECOM-1035",
+        "SECOM-1227",
+        "SECOM-1208",
+        "SECOM-1101",
+        "SECOM-1019",
+        "SECOM-1070",
+        "SECOM-1121",
+        "SECOM-1066",
+        "SECOM-1171",
+        "SECOM-1008",
+        "SECOM-1010",
+        "SECOM-1013",
+        "SECOM-1043",
+        "SECOM-1200",
+        "SECOM-1156",
+        "SECOM-1142",
+        "SECOM-1188",
+        "SECOM-1057",
+        "SECOM-1114",
+        "SECOM-1030",
+        "SECOM-1111",
+        "SECOM-1046",
+        "SECOM-0960",
+        "SECOM-1025",
+        "SECOM-1226",
+        "SECOM-1172",
+        "SECOM-1224",
+        "SECOM-1185",
+        "SECOM-1087",
+        "SECOM-1105",
+        "SECOM-1170",
+        "SECOM-1221",
+        "SECOM-0944",
+        "SECOM-1088",
+        "SECOM-1210",
+        "SECOM-1093",
+        "SECOM-1053",
+        "SECOM-1044",
+        "SECOM-1126",
+        "SECOM-1217",
+        "SECOM-1131",
+        "SECOM-1198",
+        "SECOM-1220",
+        "SECOM-0966",
+        "SECOM-1090",
+        "SECOM-1029",
+        "SECOM-1094",
+        "SECOM-1081",
+        "SECOM-1178",
+        "SECOM-1115",
+        "SECOM-1180",
+        "SECOM-1241",
+        "SECOM-1068",
+        "SECOM-1077",
+        "SECOM-1251",
+        "SECOM-1183",
+        "SECOM-1189",
+        "SECOM-1020",
+        "SECOM-1028",
+        "SECOM-0975",
+        "SECOM-1098",
+        "SECOM-1193",
+        "SECOM-1216",
+        "SECOM-1047",
+        "SECOM-1154",
+        "SECOM-1051",
+        "SECOM-1166",
+        "SECOM-0977",
+        "SECOM-0953",
+        "SECOM-1095",
+        "SECOM-1102",
+        "SECOM-1059",
+        "SECOM-0967",
+        "SECOM-1116",
+        "SECOM-1085",
+        "SECOM-1176",
+        "SECOM-1204",
+        "SECOM-1163",
+        "SECOM-1067",
+        "SECOM-1123",
+        "SECOM-1161",
+        "SECOM-0991",
+        "SECOM-1184"
+      ],
+      "population_hash": "7368e2bc482b2414d00fa632363c49aac505a8ea1ca4860ec5285c2928de2dad",
+      "run_id": "9ab3115398f717e5",
+      "model": "logistic",
+      "review_capacity": 0.5,
+      "facts": [
+        {
+          "evidence_id": "E01",
+          "text": "Selected 157 of 313 records at 50% review capacity.",
+          "measurement": null,
+          "signals": [
+            "batch_policy"
+          ]
+        },
+        {
+          "evidence_id": "E02",
+          "text": "Selected priority-score range: 0.144819\u20130.955441; scores are not calibrated probabilities.",
+          "measurement": null,
+          "signals": []
+        },
+        {
+          "evidence_id": "E03",
+          "text": "30 selected records have missing inputs among the displayed explanation features; this is not an all-feature missingness count.",
+          "measurement": null,
+          "signals": [
+            "missing"
+          ]
+        }
+      ],
+      "limitations": [
+        "Public SECOM data, not Seagate data; retrospective quality triage only.",
+        "Measurement meanings, units, and availability before final testing are unknown.",
+        "Priority scores are not calibrated failure probabilities.",
+        "Model contributions and unusual measurements are associations, not physical causes.",
+        "Small failure counts and temporal dependence limit generalization.",
+        "Generated briefs require human review; no autonomous quality decision."
+      ],
+      "content_hash": "325af38293120fc120008e017c7cc1764387410d7b0fa784d97c474a59dfa261"
+    },
+    "brief": {
+      "schema_version": "1.0",
+      "scope": "batch",
+      "observations": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "finding": "batch_policy"
+        },
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "finding": "context"
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "finding": "missing"
+        }
+      ],
+      "checks": [
+        "verify_integrity",
+        "inspect_missing",
+        "compare_reference",
+        "seek_context"
+      ],
+      "uncertainty": "Draft only. Associations are not causes; measurement meanings are unknown. Human review is required."
+    },
+    "generation": {
+      "schema_version": "1.0",
+      "generation_id": "c586ddc8a89978d10a8c63ff8496fda54cf333e3b0eb0d9e08931ba472e6ec9b",
+      "generated_at": "2026-10-01T20:43:02.686108+00:00",
+      "evidence_hash": "325af38293120fc120008e017c7cc1764387410d7b0fa784d97c474a59dfa261",
+      "prompt_version": "2.1",
+      "model": "qwen3:8b",
+      "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "runtime_version": "0.32.14",
+      "latency_seconds": 8.136,
+      "validation_result": "passed-automated-checks",
+      "generation_mode": "ollama",
+      "review_status": "unreviewed",
+      "errors": []
+    }
   }
 ]
